@@ -1,0 +1,11 @@
+.navbar{
+    justify-content: center;
+}
+.logoimg{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.nvaleft{
+    display: flex;
+    align-items: center;
+}

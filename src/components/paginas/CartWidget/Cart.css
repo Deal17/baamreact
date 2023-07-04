@@ -1,0 +1,11 @@
+.badge{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(228, 79, 52);
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -12px;
+    top: 25px;
+}
