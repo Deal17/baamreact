@@ -1,19 +1,33 @@
 import React from 'react'
-const ItemListContainer = ({ greeting }) => {
+import { data } from '../../data';
+import { Link } from 'react-router-dom';
+
+const ItemListContainer = () => {
     return (
-      <div style={containerStyle}>
-        <h1 style={titleStyle}>Lista Catálogo</h1>
-        <p>{greeting}</p>
-      </div>
+        <div className='container-items' style={containerStyle}> 
+          {data.map(product=>(
+            <div className='item' key={product.id}>
+              <figure>
+                <img src={product.img} alt={product.nameProduct}/>
+              </figure>
+              <div className='info-product'>
+                <h2>{product.nameProduct}</h2>
+                <p className='price'>${product.price}</p>
+                <button>Añadir al carrito</button>
+                <Link to={`/item/${product.id}`}>
+              <button>Más información</button>
+            </Link>
+              </div>
+            </div>
+          ))}     
+        </div>
+
     );
   };
   
   const containerStyle = {
-    backgroundColor: '#f5f5f5',
-    padding: '20px',
-    borderRadius: '5px',
-    with:"250px", with:"250px",
-    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+    margin: '0 auto',
+    'max-width': '1200px'
   };
   
   const titleStyle = {

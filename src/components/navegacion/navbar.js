@@ -2,6 +2,8 @@ import React from 'react'
 import logo from '../../Assets/baam-azul.png';
 import CartWidget from '../paginas/CartWidget/CartWidget';
 import "./navbar.css";
+import { Link,NavLink } from 'react-router-dom';
+
 function navbar() {
   return (
     <div>
@@ -16,27 +18,11 @@ function navbar() {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse navbar" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link" href="#">Galeria</a>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link" href="#">Contacto</a>
-                </li>
-                <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Productos
-                </a>
-                <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                </li>
-            </ul>
+               <Link to='/'className='listmenu'>Home</Link> 
+               <Link to='/Category/1' className='listmenu'>galeria</Link> 
+               <Link to='/Category/2'className='listmenu'>contacto</Link> 
+               <Link to='/Category/3'className='listmenu'>camiseta</Link> 
+               <Link to='/Category/4'className='listmenu'>gorras</Link> 
             </div>
             <CartWidget/>
         </div>
