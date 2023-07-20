@@ -15,8 +15,8 @@ const ItemListContainer = () => {
                 <p className='price'>${product.price}</p>
                 <button>Añadir al carrito</button>
                 <Link to={`/item/${product.id}`}>
-              <button>Más información</button>
-            </Link>
+                  <button>Más información</button>
+                </Link>
               </div>
             </div>
           ))}     

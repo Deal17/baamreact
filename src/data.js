@@ -3,8 +3,7 @@ import dnb from './Assets/dnb.jpg';
 import calavera from './Assets/calavera.jpg';
 import quicksilver from './Assets/quicksilver.jpg';
 import blanca from './Assets/blanca.jpg';
-
-import blanca2 from './Assets/markit.jpg';
+import azul from './Assets/azul.jpg';
 
 export const data = [
 	{
@@ -44,8 +43,8 @@ export const data = [
 	},
 	{
 		id: 6,
-		img: './Assets/blanca.jpg',
-		nameProduct: 'Camiseta LV',
+		img: azul,
+		nameProduct: 'Camiseta Nike',
 		price: 50000,
 		quantity: 1,
 	  }

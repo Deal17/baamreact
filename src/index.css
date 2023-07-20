@@ -223,7 +223,56 @@ header {
     cursor: pointer;
 }
 
-.container-detcamiseta{
-	max-width: 25%;
-	margin: 20px auto;
-}
+
+.product-details {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		padding-bottom: 40px; 
+  }
+  
+  .product-info {
+	display: flex;
+	align-items: center;
+  }
+  
+  .img-det {
+		width: 300px; 
+		height: auto;
+		border-radius: 10px; 
+		margin-right: 20px;
+  }
+  
+  .product-text {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  h3 {
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 24px;
+  }
+  
+  .product-price {
+	font-weight: bold;
+	color: #ff0000;
+	margin: 0;
+	margin-bottom: 10px;
+  }
+  
+  .product-quantity {
+	margin: 0;
+	margin-bottom: 10px;
+  }
+  
+  .product-description {
+	text-align: justify;
+  line-height: 1.5;
+  margin-top: 20px;
+  max-width: 800px; /* Establece el ancho máximo deseado, ajusta según tus necesidades */
+  margin-left: auto; /* Centra el párrafo horizontalmente */
+  margin-right: auto;
+  }
